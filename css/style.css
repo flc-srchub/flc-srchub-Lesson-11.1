@@ -1,0 +1,132 @@
+.wrapper {
+	min-height: 100%;
+	/* overflow: hidden; */
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900");
+/* font-family: 'Roboto', sans-serif; */
+/* &display=swap */
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.15px;
+}
+
+[class*="__container"] {
+	max-width: 1200px;
+	margin: 0px auto;
+}
+
+.main__container{
+	min-height: 800px;
+}
+
+[class*="__block-"] {
+	padding: 10px;
+	margin: 0 0 20px 0;
+	border: 3px double rgb(54, 224, 60);
+}
+
+.header__container{
+	position: fixed;
+	z-index: 2;
+	background: rgb(175, 53, 232);
+	max-width: 500px;
+	top: 30px;
+	left: 50px;
+	border-radius: 12px;
+	border: 1px solid rgb(54, 224, 60);
+	padding: 5px;
+	text-align: center;
+}
+
+.header__paragraph{
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.container__block-1 {
+	position: relative;
+	background: #6a7429;
+	top: 130px;
+	z-index: 1;
+}
+
+.container__block-1 {
+	position: relative;
+	top: 60px;
+	left: 100px;
+	background: rgb(214, 235, 129);
+	z-index: 4;
+}
+
+.container__block-2 {
+	position: sticky;
+	top: 100px;
+	left: 59px;
+	background: red;
+	z-index: 2;
+}
+
+.container__block-3 {
+	position: absolute;
+	bottom: 0;
+	right: 300px;
+	z-index: 5;
+	background: rgb(121, 20, 81);
+}
+
+.container__block-4 {
+	position: relative;
+	right: 40px;
+	font-size: 30px;
+	background: rgb(16, 153, 222);
+	z-index: 4;
+}
+
+.footer__block1{
+	position:relative;
+	display: inline-block;
+	padding-left: 79px;
+	margin: 25px;
+	width: 250px;
+	height: 350px;
+	background: #ed863c url('../img/cat.jpg') 0 0 / cover no-repeat;
+	/* overflow: hidden; */
+}
+
+.footer__block1::before{
+	content: '';
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	background: url('../img/icon1.svg') 0 0 no-repeat;
+	top: 50%;
+	left: -40px;
+}
+
+.footer__block1_moved {
+	top: 230px;
+	left: 110px;
+	z-index: 6;
+}
+
+.footer__container{
+	position: relative;
+}
+
+.footer__text {
+	position: absolute;
+	z-index: 19;
+	bottom: -30px;
+	right: -130px;
+	background: #c40f69;
+	text-decoration: underline;
+	text-transform: uppercase;
+	border-radius: 24px;
+	font-size: 10px;
+	padding: 20px;
+}
